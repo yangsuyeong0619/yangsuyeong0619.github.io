@@ -1,0 +1,49 @@
+<!DOCTYPEhtml> <!-- tableSpan.html -->
+<html lang="ko">
+<head><meta charset="utf-8"/><meta name="viewport"content="width=device-width=device-width,initial-scale=1"/>
+<style> table, tr, th, td {
+   border:1px solid black;   border-collapse:collapse;
+}
+</style><!-- border-collapse:collapse 단선으로, 반대는 separate -->
+<title>20181379 양수영 시간표</title></head>
+
+<body>
+   <table>
+   <caption>20181379 양수영 시간표</caption>
+   <thead>
+      <tr>
+      <th>교시</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
+
+   </tr>
+   </thead>
+
+   <tr>
+      <td>오전9시</td><td>-</td><td rowspan = "2">오토마타<br/></td><td rowspan = "2">자료구조<br/></td><td rowspan = "3">미 디 어<br/></td><td>-</td>
+   </tr>
+   <tr>
+     <td>오전10시</td><td>-</td><td>-</td>
+   </tr>
+   <tr>
+      <td>오전11시</td><td>-</td><td rowspan = "2">자료구조<br/></td><td>-</td><td>-</td>
+   </tr>
+   <tr>
+      <td>오후12시</td><td>-</td><td rowspan = "2">인 프 밍<br/></td><td>오토마타</td><td>-</td>
+   </tr>
+   <tr>
+      <td>오후1시</td><td>-</td><td>디 논 회</td><td rowspan = "2">인 프 밍<br/></td><td>-</td>
+   </tr>
+   <tr>
+      <td>오후2시</td><td rowspan = "2">디 논 회<br/></td><td>-</td><td rowspan = "4">C ++<br/></td><td>-</td>
+   </tr>
+   <tr>
+      <td>오후3시</td><td>-</td><td rowspan = "2">캠 퍼 스<br/></td><td>-</td>
+   </tr>
+   <tr>
+      <td>오후4시</td><td>-</td><td>-</td><td>-</td>
+   </tr>
+   <tr>
+      <td>오후5시</td><td>-</td><td>-</td><td>-</td><td>-</td>
+   </tr>
+   <tr>
+      <td>오후6시</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+   </tr>   
