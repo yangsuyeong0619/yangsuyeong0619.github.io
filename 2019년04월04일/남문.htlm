@@ -1,0 +1,13 @@
+<!doctype html> <!-- campus1.html -->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport"content="width=device-width, initial-scale=1"/>
+<title>HTML5클라이언트 사이드 이미지맵 실습</title>
+</head>
+<body>
+<header>
+<h1>남문을 선택하셨습니다.</h1>
+<img src="남문.jpg"alt="남문"/>
+</header>
+<p>남문은 대전대학교 남문에 위치한 문이다.</p>
+</body>
+</html>
