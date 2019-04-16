@@ -1,0 +1,66 @@
+<!DOCTYPEhtml> <!-- formSelect2.html-->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>스마트폰 종류</title>
+
+<script type="text/javascript">
+function doChange(srcE, targetId){
+    var val = srcE.options[srcE.selectedIndex].value;
+    var targetE = document.getElementById(targetId);
+    removeAll(targetE);
+
+    if(val == 'Galaxy'){
+        addOption('Note', targetE);
+        addOption('Note2', targetE);
+        addOption('Note3', targetE);
+        addOption('Galaxy s', targetE);
+        addOption("Galaxy s2', targetE);
+        addOption('Galaxy s3', targetE);
+    }
+    else if(val == 'Apple'){
+        addOption('IPHONE 1', targetE);
+        addOption('IPHONE 2', targetE);
+        addOption('IPHONE 3', targetE);
+        addOption('IPHONE 4', targetE);
+        addOption('IPHONE 5', targetE);
+  addOption('IPHONE 6', targetE);
+  addOption('IPHONE 7', targetE);
+  addOption('IPHONE 8', targetE);
+  addOption('IPHONE X', targetE);
+    }
+}
+
+function addOption(value, e){
+    var o = new Option(value);
+    try{
+        e.add(o);
+    }catch(ee){
+        e.add(o, null);
+    }
+}
+
+function removeAll(e){
+    for(var i = 0, limit = e.options.length; i < limit - 1; ++i){
+        e.remove(1);
+    }
+}
+</script>
+
+</head>
+<body>
+<form action="#">
+<fieldset>
+<legend>스마트폰 종류</legend>
+    <select name="brand" id="brand" onchange="doChange(this, 'type')">
+        <option value="default">★선택☆---</option>
+        <option value="Galaxy">Galaxy</option>
+        <option value="Apple">Apple</option>
+    </select>
+    <select name="type" id="type">
+        <option value="default">---선택---</option>
+    </select>
+    <button type="submit">검색</button>
+</fieldset>
+</form>
+</body>
+</html>
