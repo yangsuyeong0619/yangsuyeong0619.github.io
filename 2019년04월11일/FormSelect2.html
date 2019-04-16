@@ -1,66 +1,45 @@
-<!DOCTYPEhtml> <!-- formSelect2.html-->
-<html><head><meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>스마트폰 종류</title>
-
+<!doctype html><!-- CTS.html -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>스마트폰 종류</title>
+  </head>
+  <body>
+  <div>
+  <form name="form">
+  <select name="test" onchange="changes(document.form.test.value)">
+    <option value="">--스마트폰의 종류 --</option>
+    <option value="1">Galaxy</option>
+    <option value="2">Apple</option>
+    <option value="3">LG</option>
+  </select>
+    <select name="test2">
+    <option>----</option>
+  </select>
+</form>
+</div>
 <script type="text/javascript">
-function doChange(srcE, targetId){
-    var val = srcE.options[srcE.selectedIndex].value;
-    var targetE = document.getElementById(targetId);
-    removeAll(targetE);
-
-    if(val == 'Galaxy'){
-        addOption('Note', targetE);
-        addOption('Note2', targetE);
-        addOption('Note3', targetE);
-        addOption('Galaxy s', targetE);
-        addOption('Galaxy s2', targetE);
-        addOption('Galaxy s3', targetE);
+  function changes(fr) {
+    if(fr==1) {
+    num = new Array("NoteSerise","Galaxy S Serise","Galaxy Serise","Galaxy Tab Serise");
+    vnum = new Array("1","2","3");
+    } else if(fr==2) {
+      num = new Array("I Phone Serise","I Phone X","I Pad Serise");
+    vnum = new Array("1","2","3");
     }
-    else if(val == 'Apple'){
-        addOption('IPHONE 1', targetE);
-        addOption('IPHONE 2', targetE);
-        addOption('IPHONE 3', targetE);
-        addOption('IPHONE 4', targetE);
-        addOption('IPHONE 5', targetE);
-  addOption('IPHONE 6', targetE);
-  addOption('IPHONE 7', targetE);
-  addOption('IPHONE 8', targetE);
-  addOption('IPHONE X', targetE);
+    else if(fr==3) {
+      num = new Array("LG G Serise","LG G-Pad Serise");
+    vnum = new Array("1","2","3");
     }
-}
-
-function addOption(value, e){
-    var o = new Option(value);
-    try{
-        e.add(o);
-    }catch(ee){
-        e.add(o, null);
-    }
-}
-
-function removeAll(e){
-    for(var i = 0, limit = e.options.length; i < limit - 1; ++i){
-        e.remove(1);
-    }
+  for(i=0; i<form.test2.length; i++) {
+    form.test2.options[0] = null;
+  }
+  for(i=0;i < num.length;i++) {
+    document.form.test2.options[i] = new Option(num[i],vnum[i]);
+  }
 }
 </script>
-
-</head>
-<body>
-<form action="#">
-<fieldset>
-<legend>스마트폰 종류</legend>
-    <select name="brand" id="brand" onchange="doChange(this, 'type')">
-        <option value="default">★선택☆---</option>
-        <option value="Galaxy">Galaxy</option>
-        <option value="Apple">Apple</option>
-    </select>
-    <select name="type" id="type">
-        <option value="default">★선택☆</option>
-    </select>
-    <button type="submit">검색</button>
-</fieldset>
-</form>
 </body>
 </html>
+
