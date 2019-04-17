@@ -3,19 +3,30 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
+ <legend>
+   2019년 4월 11일작성
+ </legend>
   <title>스마트폰 종류</title>
+ 
+  <style>
+  h2{	display:block; font-size:1eml margin-top:1.33em; margin-bottom:1.33em; margin-left: 0;
+	margin-right: 0; font-weight:bold;}
+	#h2new {font-style; color:blue;}
+  </style>
+<h3>
+스마트기기의 종류
+</h3>
 
-<script type="text/javascript">
-function doChange(srcE, targetId){
-    var val = srcE.options[srcE.selectedIndex].value;
-    var targetE = document.getElementById(targetId);
+
   </head>
   <body>
+  <section>
+  <fieldset>
   <div>
   <form name="form">
   <select name="test" onchange="changes(document.form.test.value)">
-    <option value="">--스마트폰의 종류 --</option>
-    <option value="1">Galaxy</option>
+    <option value="">--스마트기기의 종류 --</option>
+    <option value="1">SamSung</option>
     <option value="2">Apple</option>
     <option value="3">LG</option>
   </select>
@@ -27,10 +38,10 @@ function doChange(srcE, targetId){
 <script type="text/javascript">
   function changes(fr) {
     if(fr==1) {
-    num = new Array("NoteSerise","Galaxy S Serise","Galaxy Serise","Galaxy Tab Serise");
+    num = new Array("NoteSerise","Galaxy S Serise","Galaxy Watch","Galaxy Serise","Galaxy Tab Serise");
     vnum = new Array("1","2","3");
     } else if(fr==2) {
-      num = new Array("I Phone Serise","I Phone X","I Pad Serise");
+      num = new Array("I Phone Serise","AppleWatch","I Phone X","I Pad Serise");
     vnum = new Array("1","2","3");
     }
     else if(fr==3) {
@@ -45,7 +56,8 @@ function doChange(srcE, targetId){
   }
 }
 </script>
+</fieldset>
+</section>
 </body>
 </html>
-
 
