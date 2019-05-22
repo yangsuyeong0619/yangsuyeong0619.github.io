@@ -1,70 +1,79 @@
-<!doctype html> <!-- page.html-->
-<header>
-  <a href="#" id="logo">Y-swim</a>
+<!DOCTYPE html>
+<!-- page.html-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>양수영 포토폴리오</title>
+        <link rel="stylesheet" href="./compass.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="logo">Y-swim</a>
+                <ul>
+                    <li><a onclick="scrollToAnimate('body')">Main</a></li>
+                    <li><a onclick="scrollToAnimate('.whoami')">Who Am I</a></li>
+                    <li><a onclick="scrollToAnimate('.history')">Histroy</a></li>
+                    <li><a onclick="scrollToAnimate('.career')">Career</a></li>
+                    <li><a onclick="scrollToAnimate('.etc')">Blank(after)</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<nav>
-    <ul>
-        <li><a href="#">Main</a></li>
-        <li><a href="#">Who Am I</a></li>
-        <li><a href="#">Histroy</a></li>
-        <li><a href="#">Career</a></li>
-        <li><a href="#">Blank(after)</a></li>
-    </ul>
-    </nav>
-    </header>
+        <section id="hero1" class="hero personal">
+            <div class="inner">
+                <div class="copy">
+                    <h1>Y.S.Y</h1>
+                    <p>개인 포트폴리오 페이지</p>
+                </div>
+            </div>
+        </section>
 
-<section id="hero1" class="hero">
-  <div class="inner">
-    <div class="copy">
-    <h1>Y.S.Y</h1>
-    <p>개인 포트폴리오 페이지</p>
-    </div>
-  </div>
-</section>
+        <section class="content whoami">
+            <div class="inner">
+                <div class="copy">
+                    <h1>WHO AM I?</h1>
+                    <p>추가</p>
+                </div>
+            </div>
+        </section>
 
-<section class="content">
-  <div class="inner">
-    <div class="copy">
-    <h1>WHO AM I?</h1>
-    <p>추가 </p>
-    </div>
-  </div>
-</section>
+        <section id="hero2" class="hero history">
+            <div class="inner">
+                <div class="copy">
+                    <h1>HISTORY</h1>
+                    <p>추가</p>
+                </div>
+            </div>
+        </section>
 
-<section id="hero2" class="hero">
-  <div class="inner">
-    <div class="copy">
-    <h1>HISTORY</h1>
-    <p>추가</p>
-    </div>
-  </div>
-</section>
-  
-<section class="content">
-  <div class="inner">
-    <div class="copy">
-    <h1>CAREER</h1>
-      <p>추가</p>
-    </div>
-  </div>
-</section>
+        <section class="content career">
+            <div class="inner">
+                <div class="copy">
+                    <h1>CAREER</h1>
+                    <p>추가</p>
+                </div>
+            </div>
+        </section>
 
-<section id="hero3" class="hero">
-  <div class="inner">
-    <div class="copy">
-    <h1>V</h1>
-    <p>추가</p>
-    </div>
-  </div>
-</section>
+        <section id="hero3" class="hero v">
+            <div class="inner">
+                <div class="copy">
+                    <h1>V</h1>
+                    <p>추가</p>
+                </div>
+            </div>
+        </section>
 
-<section class="content">
-  <div class="inner">
-    <div class="copy">
-    <h1>ETC</h1>
-      <p>추가</p>
-    </div>
-  </div>
-</section>
-
-<link rel="stylesheet" href="compass.css">
+        <section class="content etc">
+            <div class="inner">
+                <div class="copy">
+                    <h1>ETC</h1>
+                    <p>추가</p>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="./animate.js"></script>
+</html>
