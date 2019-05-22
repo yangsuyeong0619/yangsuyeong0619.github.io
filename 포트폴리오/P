@@ -1,1 +1,53 @@
 
+<header>
+  <a href="#" id="logo">Y-swim</a>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Who Am I</a></li>
+        <li><a href="#">Histroy</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Blank(after)</a></li>
+    </ul>
+    </nav>
+    </header>
+
+<section id="hero1" class="hero">
+  <div class="inner">
+    <div class="copy">
+    <h1>Y.S.Y</h1>
+    <p>개인 포트폴리오 페이지</p>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="inner">
+    <div class="copy">
+    <h1>WHO AM I?</h1>
+    <p>추가 </p>
+    </div>
+  </div>
+</section>
+
+<section id="hero2" class="hero">
+  <div class="inner">
+    <div class="copy">
+    <h1>HISTORY</h1>
+    <p>추가</p>
+    </div>
+  </div>
+</section>
+  
+<section class="content">
+  <div class="inner">
+    <div class="copy">
+    <h1>CAREER</h1>
+      <p>추가</p>
+    </div>
+  </div>
+</section>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
