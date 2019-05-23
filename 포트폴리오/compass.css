@@ -61,18 +61,15 @@ header a {
 }
 
 .inner {
-    min-height: 60vh;
+   height: 100%;
     position: relative;
 }
-
 
 .hero .inner {
     background: rgba(0, 0, 0, 0.7)
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC)
         repeat;
-  height: 80vh;
 }
-
 
 .copy {
     position: absolute;
@@ -132,6 +129,7 @@ nav > ul > li {
   display: inline;
   text-align: start;
 }
+
 .fill-vp {
   height: 100vh;
   min-height: 100vh;
